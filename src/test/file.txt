@@ -1,0 +1,4 @@
+This is a text file
+that i will read using streams
+lets see how it works
+for this i'll use nio package.

@@ -1,0 +1,25 @@
+<body onload="test();"></body>
+
+<script>
+    function foo(x ,y){
+        return x + y;
+    }
+
+    function printMessage(firstName, lastName, callback){
+        const fullname = `${firstName} ${lastName}`;
+        if(typeof callback === 'function'){
+            callback(fullname);
+        }
+    }
+
+    function test(){
+        return function(y){
+            console.log('hello');
+        }
+    }
+
+    console.log(typeof test);
+
+
+</script>
+
